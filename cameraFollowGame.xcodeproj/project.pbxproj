@@ -1,0 +1,831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		263FF2D078D10CC2C7C6B74A /* Pods_cameraFollowGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C266F4FA9042616A1A8C42 /* Pods_cameraFollowGame.framework */; };
+		841DEABB22EFA21F00E5C18B /* LocalAdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841DEABA22EFA21F00E5C18B /* LocalAdVC.swift */; };
+		8435C43122EB7EFB0088F8AC /* GameStartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435C43022EB7EFB0088F8AC /* GameStartScene.swift */; };
+		8435C43322EB7F410088F8AC /* backgroundAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435C43222EB7F410088F8AC /* backgroundAnimation.swift */; };
+		8435C43522EB7F710088F8AC /* backgroundShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435C43422EB7F710088F8AC /* backgroundShape.swift */; };
+		8435C43722EB7FE80088F8AC /* DeadBlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435C43622EB7FE80088F8AC /* DeadBlocks.swift */; };
+		84A5B11322F4EF3D009F4EC8 /* CoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A5B11222F4EF3D009F4EC8 /* CoinView.swift */; };
+		84A5B11522F50D4A009F4EC8 /* StoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A5B11422F50D4A009F4EC8 /* StoreVC.swift */; };
+		84AEF2EF22EB89AB00D22D7A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84AEF2EE22EB89AB00D22D7A /* GoogleService-Info.plist */; };
+		84AEF2F122EB929200D22D7A /* NewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEF2F022EB929200D22D7A /* NewVC.swift */; };
+		84AEF2F322EB92DD00D22D7A /* Highscorecell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEF2F222EB92DD00D22D7A /* Highscorecell.swift */; };
+		84B159C122DBC3FE00EF5DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B159C022DBC3FE00EF5DBB /* AppDelegate.swift */; };
+		84B159C722DBC3FE00EF5DBB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B159C622DBC3FE00EF5DBB /* GameScene.swift */; };
+		84B159C922DBC3FE00EF5DBB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B159C822DBC3FE00EF5DBB /* GameViewController.swift */; };
+		84B159CC22DBC3FE00EF5DBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B159CA22DBC3FE00EF5DBB /* Main.storyboard */; };
+		84B159CE22DBC40000EF5DBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B159CD22DBC40000EF5DBB /* Assets.xcassets */; };
+		84B159D122DBC40000EF5DBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B159CF22DBC40000EF5DBB /* LaunchScreen.storyboard */; };
+		84B159DC22DBC40000EF5DBB /* cameraFollowGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B159DB22DBC40000EF5DBB /* cameraFollowGameTests.swift */; };
+		84B159E722DBC40000EF5DBB /* cameraFollowGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B159E622DBC40000EF5DBB /* cameraFollowGameUITests.swift */; };
+		84B159F522DBCCF600EF5DBB /* player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B159F422DBCCF600EF5DBB /* player.swift */; };
+		84B159F722DBCE5A00EF5DBB /* Ground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B159F622DBCE5A00EF5DBB /* Ground.swift */; };
+		84B159F922DBD9A200EF5DBB /* Landscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B159F822DBD9A200EF5DBB /* Landscape.swift */; };
+		84B159FB22DD55EF00EF5DBB /* PhysicsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B159FA22DD55EF00EF5DBB /* PhysicsCategory.swift */; };
+		84B159FD22DD587600EF5DBB /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B159FC22DD587600EF5DBB /* Coin.swift */; };
+		84B159FF22DD67A500EF5DBB /* deadly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B159FE22DD67A500EF5DBB /* deadly.swift */; };
+		84B15A0322E60A6B00EF5DBB /* Stair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B15A0222E60A6B00EF5DBB /* Stair.swift */; };
+		84B15A0522E60C0A00EF5DBB /* staircase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B15A0422E60C0A00EF5DBB /* staircase.swift */; };
+		84B15A0722E6798400EF5DBB /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B15A0622E6798400EF5DBB /* GameOverScene.swift */; };
+		84B15A0922E68D4F00EF5DBB /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B15A0822E68D4F00EF5DBB /* Label.swift */; };
+		84B15A0B22E756D300EF5DBB /* BeginBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B15A0A22E756D300EF5DBB /* BeginBlock.swift */; };
+		CA7CC1584FA343FEEE295F2E /* Pods_cameraFollowGameUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DC427A4F503FFF1B5150DC0 /* Pods_cameraFollowGameUITests.framework */; };
+		DCBBC8D8C35B33840F0AEF19 /* Pods_cameraFollowGameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16694C53E652FF62B4EF6D1E /* Pods_cameraFollowGameTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84B159D822DBC40000EF5DBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84B159B522DBC3FE00EF5DBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84B159BC22DBC3FE00EF5DBB;
+			remoteInfo = cameraFollowGame;
+		};
+		84B159E322DBC40000EF5DBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84B159B522DBC3FE00EF5DBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84B159BC22DBC3FE00EF5DBB;
+			remoteInfo = cameraFollowGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16694C53E652FF62B4EF6D1E /* Pods_cameraFollowGameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cameraFollowGameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		338A2BEE80EF2017CD2D0B92 /* Pods-cameraFollowGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cameraFollowGame.release.xcconfig"; path = "Target Support Files/Pods-cameraFollowGame/Pods-cameraFollowGame.release.xcconfig"; sourceTree = "<group>"; };
+		46484716831223F6E5A4693F /* Pods-cameraFollowGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cameraFollowGameUITests.debug.xcconfig"; path = "Target Support Files/Pods-cameraFollowGameUITests/Pods-cameraFollowGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		51AB53C8C57F3374CC0744ED /* Pods-cameraFollowGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cameraFollowGame.debug.xcconfig"; path = "Target Support Files/Pods-cameraFollowGame/Pods-cameraFollowGame.debug.xcconfig"; sourceTree = "<group>"; };
+		58CD92A6FB83EB636A5A0E77 /* Pods-cameraFollowGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cameraFollowGameTests.debug.xcconfig"; path = "Target Support Files/Pods-cameraFollowGameTests/Pods-cameraFollowGameTests.debug.xcconfig"; sourceTree = "<group>"; };
+		841DEABA22EFA21F00E5C18B /* LocalAdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAdVC.swift; sourceTree = "<group>"; };
+		841DEABC22F0985500E5C18B /* cameraFollowGame.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = cameraFollowGame.entitlements; sourceTree = "<group>"; };
+		8435C43022EB7EFB0088F8AC /* GameStartScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStartScene.swift; sourceTree = "<group>"; };
+		8435C43222EB7F410088F8AC /* backgroundAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = backgroundAnimation.swift; sourceTree = "<group>"; };
+		8435C43422EB7F710088F8AC /* backgroundShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = backgroundShape.swift; sourceTree = "<group>"; };
+		8435C43622EB7FE80088F8AC /* DeadBlocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeadBlocks.swift; sourceTree = "<group>"; };
+		84A5B11222F4EF3D009F4EC8 /* CoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinView.swift; sourceTree = "<group>"; };
+		84A5B11422F50D4A009F4EC8 /* StoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreVC.swift; sourceTree = "<group>"; };
+		84AEF2EE22EB89AB00D22D7A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84AEF2F022EB929200D22D7A /* NewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVC.swift; sourceTree = "<group>"; };
+		84AEF2F222EB92DD00D22D7A /* Highscorecell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Highscorecell.swift; sourceTree = "<group>"; };
+		84B159BD22DBC3FE00EF5DBB /* cameraFollowGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cameraFollowGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B159C022DBC3FE00EF5DBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84B159C622DBC3FE00EF5DBB /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		84B159C822DBC3FE00EF5DBB /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		84B159CB22DBC3FE00EF5DBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84B159CD22DBC40000EF5DBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84B159D022DBC40000EF5DBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84B159D222DBC40000EF5DBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B159D722DBC40000EF5DBB /* cameraFollowGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cameraFollowGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B159DB22DBC40000EF5DBB /* cameraFollowGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraFollowGameTests.swift; sourceTree = "<group>"; };
+		84B159DD22DBC40000EF5DBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B159E222DBC40000EF5DBB /* cameraFollowGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cameraFollowGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B159E622DBC40000EF5DBB /* cameraFollowGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraFollowGameUITests.swift; sourceTree = "<group>"; };
+		84B159E822DBC40000EF5DBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B159F422DBCCF600EF5DBB /* player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = player.swift; sourceTree = "<group>"; };
+		84B159F622DBCE5A00EF5DBB /* Ground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ground.swift; sourceTree = "<group>"; };
+		84B159F822DBD9A200EF5DBB /* Landscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landscape.swift; sourceTree = "<group>"; };
+		84B159FA22DD55EF00EF5DBB /* PhysicsCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsCategory.swift; sourceTree = "<group>"; };
+		84B159FC22DD587600EF5DBB /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		84B159FE22DD67A500EF5DBB /* deadly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deadly.swift; sourceTree = "<group>"; };
+		84B15A0222E60A6B00EF5DBB /* Stair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stair.swift; sourceTree = "<group>"; };
+		84B15A0422E60C0A00EF5DBB /* staircase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = staircase.swift; sourceTree = "<group>"; };
+		84B15A0622E6798400EF5DBB /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		84B15A0822E68D4F00EF5DBB /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		84B15A0A22E756D300EF5DBB /* BeginBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginBlock.swift; sourceTree = "<group>"; };
+		8DC427A4F503FFF1B5150DC0 /* Pods_cameraFollowGameUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cameraFollowGameUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2C266F4FA9042616A1A8C42 /* Pods_cameraFollowGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cameraFollowGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9D7F208B9C7CC705FFA31DD /* Pods-cameraFollowGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cameraFollowGameTests.release.xcconfig"; path = "Target Support Files/Pods-cameraFollowGameTests/Pods-cameraFollowGameTests.release.xcconfig"; sourceTree = "<group>"; };
+		EAD7983F12AEE38E8ABD8FF7 /* Pods-cameraFollowGameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cameraFollowGameUITests.release.xcconfig"; path = "Target Support Files/Pods-cameraFollowGameUITests/Pods-cameraFollowGameUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84B159BA22DBC3FE00EF5DBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				263FF2D078D10CC2C7C6B74A /* Pods_cameraFollowGame.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B159D422DBC40000EF5DBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCBBC8D8C35B33840F0AEF19 /* Pods_cameraFollowGameTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B159DF22DBC40000EF5DBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA7CC1584FA343FEEE295F2E /* Pods_cameraFollowGameUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09AA944C882EDB523A8B3FC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2C266F4FA9042616A1A8C42 /* Pods_cameraFollowGame.framework */,
+				16694C53E652FF62B4EF6D1E /* Pods_cameraFollowGameTests.framework */,
+				8DC427A4F503FFF1B5150DC0 /* Pods_cameraFollowGameUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43BABAE6314D8F8BC7465B34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51AB53C8C57F3374CC0744ED /* Pods-cameraFollowGame.debug.xcconfig */,
+				338A2BEE80EF2017CD2D0B92 /* Pods-cameraFollowGame.release.xcconfig */,
+				58CD92A6FB83EB636A5A0E77 /* Pods-cameraFollowGameTests.debug.xcconfig */,
+				C9D7F208B9C7CC705FFA31DD /* Pods-cameraFollowGameTests.release.xcconfig */,
+				46484716831223F6E5A4693F /* Pods-cameraFollowGameUITests.debug.xcconfig */,
+				EAD7983F12AEE38E8ABD8FF7 /* Pods-cameraFollowGameUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		84B159B422DBC3FE00EF5DBB = {
+			isa = PBXGroup;
+			children = (
+				84B159BF22DBC3FE00EF5DBB /* cameraFollowGame */,
+				84B159DA22DBC40000EF5DBB /* cameraFollowGameTests */,
+				84B159E522DBC40000EF5DBB /* cameraFollowGameUITests */,
+				84B159BE22DBC3FE00EF5DBB /* Products */,
+				43BABAE6314D8F8BC7465B34 /* Pods */,
+				09AA944C882EDB523A8B3FC7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84B159BE22DBC3FE00EF5DBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84B159BD22DBC3FE00EF5DBB /* cameraFollowGame.app */,
+				84B159D722DBC40000EF5DBB /* cameraFollowGameTests.xctest */,
+				84B159E222DBC40000EF5DBB /* cameraFollowGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84B159BF22DBC3FE00EF5DBB /* cameraFollowGame */ = {
+			isa = PBXGroup;
+			children = (
+				841DEABC22F0985500E5C18B /* cameraFollowGame.entitlements */,
+				84B159C022DBC3FE00EF5DBB /* AppDelegate.swift */,
+				84B159C822DBC3FE00EF5DBB /* GameViewController.swift */,
+				84B159CA22DBC3FE00EF5DBB /* Main.storyboard */,
+				84A5B11422F50D4A009F4EC8 /* StoreVC.swift */,
+				841DEABA22EFA21F00E5C18B /* LocalAdVC.swift */,
+				84AEF2F022EB929200D22D7A /* NewVC.swift */,
+				84AEF2F222EB92DD00D22D7A /* Highscorecell.swift */,
+				84B159CD22DBC40000EF5DBB /* Assets.xcassets */,
+				84B159CF22DBC40000EF5DBB /* LaunchScreen.storyboard */,
+				84B159D222DBC40000EF5DBB /* Info.plist */,
+				84AEF2EE22EB89AB00D22D7A /* GoogleService-Info.plist */,
+				8435C43022EB7EFB0088F8AC /* GameStartScene.swift */,
+				84B159C622DBC3FE00EF5DBB /* GameScene.swift */,
+				84B15A0622E6798400EF5DBB /* GameOverScene.swift */,
+				8435C43222EB7F410088F8AC /* backgroundAnimation.swift */,
+				8435C43422EB7F710088F8AC /* backgroundShape.swift */,
+				84B159FA22DD55EF00EF5DBB /* PhysicsCategory.swift */,
+				84B159FE22DD67A500EF5DBB /* deadly.swift */,
+				84B159F422DBCCF600EF5DBB /* player.swift */,
+				84B159FC22DD587600EF5DBB /* Coin.swift */,
+				84B159F622DBCE5A00EF5DBB /* Ground.swift */,
+				84B159F822DBD9A200EF5DBB /* Landscape.swift */,
+				84B15A0A22E756D300EF5DBB /* BeginBlock.swift */,
+				84B15A0222E60A6B00EF5DBB /* Stair.swift */,
+				84B15A0422E60C0A00EF5DBB /* staircase.swift */,
+				84B15A0822E68D4F00EF5DBB /* Label.swift */,
+				8435C43622EB7FE80088F8AC /* DeadBlocks.swift */,
+				84A5B11222F4EF3D009F4EC8 /* CoinView.swift */,
+			);
+			path = cameraFollowGame;
+			sourceTree = "<group>";
+		};
+		84B159DA22DBC40000EF5DBB /* cameraFollowGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				84B159DB22DBC40000EF5DBB /* cameraFollowGameTests.swift */,
+				84B159DD22DBC40000EF5DBB /* Info.plist */,
+			);
+			path = cameraFollowGameTests;
+			sourceTree = "<group>";
+		};
+		84B159E522DBC40000EF5DBB /* cameraFollowGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84B159E622DBC40000EF5DBB /* cameraFollowGameUITests.swift */,
+				84B159E822DBC40000EF5DBB /* Info.plist */,
+			);
+			path = cameraFollowGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84B159BC22DBC3FE00EF5DBB /* cameraFollowGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B159EB22DBC40000EF5DBB /* Build configuration list for PBXNativeTarget "cameraFollowGame" */;
+			buildPhases = (
+				9636E5DDB9A962D65C1C5EE8 /* [CP] Check Pods Manifest.lock */,
+				84B159B922DBC3FE00EF5DBB /* Sources */,
+				84B159BA22DBC3FE00EF5DBB /* Frameworks */,
+				84B159BB22DBC3FE00EF5DBB /* Resources */,
+				64A9BF9956710DBF4B27CCA5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cameraFollowGame;
+			productName = cameraFollowGame;
+			productReference = 84B159BD22DBC3FE00EF5DBB /* cameraFollowGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84B159D622DBC40000EF5DBB /* cameraFollowGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B159EE22DBC40000EF5DBB /* Build configuration list for PBXNativeTarget "cameraFollowGameTests" */;
+			buildPhases = (
+				32BD284F4A4DBE0322BF18E3 /* [CP] Check Pods Manifest.lock */,
+				84B159D322DBC40000EF5DBB /* Sources */,
+				84B159D422DBC40000EF5DBB /* Frameworks */,
+				84B159D522DBC40000EF5DBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84B159D922DBC40000EF5DBB /* PBXTargetDependency */,
+			);
+			name = cameraFollowGameTests;
+			productName = cameraFollowGameTests;
+			productReference = 84B159D722DBC40000EF5DBB /* cameraFollowGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84B159E122DBC40000EF5DBB /* cameraFollowGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B159F122DBC40000EF5DBB /* Build configuration list for PBXNativeTarget "cameraFollowGameUITests" */;
+			buildPhases = (
+				65F58A80D2E565DB30805100 /* [CP] Check Pods Manifest.lock */,
+				84B159DE22DBC40000EF5DBB /* Sources */,
+				84B159DF22DBC40000EF5DBB /* Frameworks */,
+				84B159E022DBC40000EF5DBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84B159E422DBC40000EF5DBB /* PBXTargetDependency */,
+			);
+			name = cameraFollowGameUITests;
+			productName = cameraFollowGameUITests;
+			productReference = 84B159E222DBC40000EF5DBB /* cameraFollowGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84B159B522DBC3FE00EF5DBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = CyrusIllick;
+				TargetAttributes = {
+					84B159BC22DBC3FE00EF5DBB = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
+					};
+					84B159D622DBC40000EF5DBB = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 84B159BC22DBC3FE00EF5DBB;
+					};
+					84B159E122DBC40000EF5DBB = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 84B159BC22DBC3FE00EF5DBB;
+					};
+				};
+			};
+			buildConfigurationList = 84B159B822DBC3FE00EF5DBB /* Build configuration list for PBXProject "cameraFollowGame" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84B159B422DBC3FE00EF5DBB;
+			productRefGroup = 84B159BE22DBC3FE00EF5DBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84B159BC22DBC3FE00EF5DBB /* cameraFollowGame */,
+				84B159D622DBC40000EF5DBB /* cameraFollowGameTests */,
+				84B159E122DBC40000EF5DBB /* cameraFollowGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84B159BB22DBC3FE00EF5DBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B159CC22DBC3FE00EF5DBB /* Main.storyboard in Resources */,
+				84AEF2EF22EB89AB00D22D7A /* GoogleService-Info.plist in Resources */,
+				84B159CE22DBC40000EF5DBB /* Assets.xcassets in Resources */,
+				84B159D122DBC40000EF5DBB /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B159D522DBC40000EF5DBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B159E022DBC40000EF5DBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32BD284F4A4DBE0322BF18E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cameraFollowGameTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64A9BF9956710DBF4B27CCA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cameraFollowGame/Pods-cameraFollowGame-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cameraFollowGame/Pods-cameraFollowGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65F58A80D2E565DB30805100 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cameraFollowGameUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9636E5DDB9A962D65C1C5EE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cameraFollowGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84B159B922DBC3FE00EF5DBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B159F522DBCCF600EF5DBB /* player.swift in Sources */,
+				84B15A0B22E756D300EF5DBB /* BeginBlock.swift in Sources */,
+				84AEF2F322EB92DD00D22D7A /* Highscorecell.swift in Sources */,
+				84B15A0522E60C0A00EF5DBB /* staircase.swift in Sources */,
+				84B159F922DBD9A200EF5DBB /* Landscape.swift in Sources */,
+				841DEABB22EFA21F00E5C18B /* LocalAdVC.swift in Sources */,
+				8435C43322EB7F410088F8AC /* backgroundAnimation.swift in Sources */,
+				84AEF2F122EB929200D22D7A /* NewVC.swift in Sources */,
+				84B159C722DBC3FE00EF5DBB /* GameScene.swift in Sources */,
+				8435C43122EB7EFB0088F8AC /* GameStartScene.swift in Sources */,
+				84B159FF22DD67A500EF5DBB /* deadly.swift in Sources */,
+				84A5B11322F4EF3D009F4EC8 /* CoinView.swift in Sources */,
+				84B15A0922E68D4F00EF5DBB /* Label.swift in Sources */,
+				84B159C922DBC3FE00EF5DBB /* GameViewController.swift in Sources */,
+				84B159C122DBC3FE00EF5DBB /* AppDelegate.swift in Sources */,
+				84B15A0722E6798400EF5DBB /* GameOverScene.swift in Sources */,
+				84B159F722DBCE5A00EF5DBB /* Ground.swift in Sources */,
+				8435C43722EB7FE80088F8AC /* DeadBlocks.swift in Sources */,
+				84B159FD22DD587600EF5DBB /* Coin.swift in Sources */,
+				8435C43522EB7F710088F8AC /* backgroundShape.swift in Sources */,
+				84A5B11522F50D4A009F4EC8 /* StoreVC.swift in Sources */,
+				84B159FB22DD55EF00EF5DBB /* PhysicsCategory.swift in Sources */,
+				84B15A0322E60A6B00EF5DBB /* Stair.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B159D322DBC40000EF5DBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B159DC22DBC40000EF5DBB /* cameraFollowGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B159DE22DBC40000EF5DBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B159E722DBC40000EF5DBB /* cameraFollowGameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84B159D922DBC40000EF5DBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84B159BC22DBC3FE00EF5DBB /* cameraFollowGame */;
+			targetProxy = 84B159D822DBC40000EF5DBB /* PBXContainerItemProxy */;
+		};
+		84B159E422DBC40000EF5DBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84B159BC22DBC3FE00EF5DBB /* cameraFollowGame */;
+			targetProxy = 84B159E322DBC40000EF5DBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84B159CA22DBC3FE00EF5DBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84B159CB22DBC3FE00EF5DBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84B159CF22DBC40000EF5DBB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84B159D022DBC40000EF5DBB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84B159E922DBC40000EF5DBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84B159EA22DBC40000EF5DBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84B159EC22DBC40000EF5DBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51AB53C8C57F3374CC0744ED /* Pods-cameraFollowGame.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3PLWW4V9G5;
+				INFOPLIST_FILE = cameraFollowGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyrusIllick.cameraFollowGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84B159ED22DBC40000EF5DBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 338A2BEE80EF2017CD2D0B92 /* Pods-cameraFollowGame.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3PLWW4V9G5;
+				INFOPLIST_FILE = cameraFollowGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyrusIllick.cameraFollowGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84B159EF22DBC40000EF5DBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58CD92A6FB83EB636A5A0E77 /* Pods-cameraFollowGameTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3PLWW4V9G5;
+				INFOPLIST_FILE = cameraFollowGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyrusIllick.cameraFollowGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cameraFollowGame.app/cameraFollowGame";
+			};
+			name = Debug;
+		};
+		84B159F022DBC40000EF5DBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9D7F208B9C7CC705FFA31DD /* Pods-cameraFollowGameTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3PLWW4V9G5;
+				INFOPLIST_FILE = cameraFollowGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyrusIllick.cameraFollowGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cameraFollowGame.app/cameraFollowGame";
+			};
+			name = Release;
+		};
+		84B159F222DBC40000EF5DBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46484716831223F6E5A4693F /* Pods-cameraFollowGameUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3PLWW4V9G5;
+				INFOPLIST_FILE = cameraFollowGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyrusIllick.cameraFollowGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = cameraFollowGame;
+			};
+			name = Debug;
+		};
+		84B159F322DBC40000EF5DBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAD7983F12AEE38E8ABD8FF7 /* Pods-cameraFollowGameUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3PLWW4V9G5;
+				INFOPLIST_FILE = cameraFollowGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cyrusIllick.cameraFollowGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = cameraFollowGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84B159B822DBC3FE00EF5DBB /* Build configuration list for PBXProject "cameraFollowGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B159E922DBC40000EF5DBB /* Debug */,
+				84B159EA22DBC40000EF5DBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84B159EB22DBC40000EF5DBB /* Build configuration list for PBXNativeTarget "cameraFollowGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B159EC22DBC40000EF5DBB /* Debug */,
+				84B159ED22DBC40000EF5DBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84B159EE22DBC40000EF5DBB /* Build configuration list for PBXNativeTarget "cameraFollowGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B159EF22DBC40000EF5DBB /* Debug */,
+				84B159F022DBC40000EF5DBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84B159F122DBC40000EF5DBB /* Build configuration list for PBXNativeTarget "cameraFollowGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B159F222DBC40000EF5DBB /* Debug */,
+				84B159F322DBC40000EF5DBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84B159B522DBC3FE00EF5DBB /* Project object */;
+}

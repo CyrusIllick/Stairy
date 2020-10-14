@@ -1,0 +1,6 @@
+framework module Pods_cameraFollowGame {
+  umbrella header "Pods-cameraFollowGame-umbrella.h"
+
+  export *
+  module * { export * }
+}
